@@ -1,0 +1,90 @@
+/*responsive css*/
+@media (min-width:800px) {
+  li.parent:hover ul.submenu { visibility: visible; opacity: 1; }
+  }
+  
+  @media (max-width:991px) {
+  .header-wrapper { padding: 0; }
+  .header-wrapper > .header-right { width: calc(100% - 148px);
+  }
+  
+  }
+  @media (max-width:800px) {
+  
+  .header-wrapper { padding: 0px 0; }
+
+  .navigation-open { display: inline-block; border: none; padding: 0px; position: relative; vertical-align: middle; 
+      z-index: 1; width: 40px; height: 40px; background: #fff; margin-left: 10px;border-radius: 30%;
+  border: 2px solid #fff; }
+  
+  .navigation-open:hover { background: #fff; }
+  .navigation-open span { display: block; width: 20px; height: 3px; background:#000; margin: 0 auto; 
+       position: relative; pointer-events: none; transform: all 0s ease .30s; }
+  
+  .navigation-open span:before, .navigation-open span:after { content: ""; display: block; width: 100%; height: 100%; 
+      background:#000; position: absolute; left: 0; top: -7px;  transition: top .25s ease .25s,  
+      }
+  
+  .navigation-open span:after { top: 7px; transition: top .25s ease .25s,}
+  
+  .navigation { background-color: rgb(180, 178, 174); z-index: 99; position: fixed; top: 0; right: 100%; width: 300px; 
+      height: 100%; overflow: auto; -webkit-overflow-scrolling: touch; display: block !important; 
+      transition: all 0.5s ease;  -webkit-transition: all 0.5s ease; padding: 0 0 30px; }
+  
+  body.menu-action .navigation { margin-right: -300px; }
+  span.menu-trigger.nt_opended:before { opacity: 0; }
+  
+  body.menu-action:after { transform: translateX(300px);  }
+  
+  body:after { content: ""; display: block; position: fixed; left: 0; right: 0; top: 0; height: 100%; 
+       background:rgb(242, 213, 68); opacity: 0.3;
+    ; z-index: 9; cursor: pointer; transform: translateX(100%);  transition: all .5s ease;  }
+  
+  .navigation-close { padding: 0; vertical-align: middle; z-index: 11; background: none; border: none; padding: 0 20px; }
+  .navigation-close > svg { fill: #fff; width: 20px; height: 17px; }
+  .header-actions-wrapper { text-align: left; display: flex; flex-wrap: wrap; align-items: center; flex: 1;
+       background-color:rgb(85, 85, 82); ; padding: 10px 0; }
+   
+  .nav-logo { flex: 1; padding-left: 15px; }
+  .nav-logo img { width: 100px; }
+  .navigation > ul { padding: 20px 15px; }
+  .navigation > ul > li { text-align: left; display: block; padding: 10 px 0; position: relative; }
+  span.menu-trigger { display: block; width: 30px; height: 30px; top: 0; z-index: 0; position: absolute; right: 0; }
+  li.has-child span.menu-trigger { width: 22px; height: 22px; }
+  span.menu-trigger:after, span.menu-trigger:before { position: absolute; content: ''; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%) rotate( -90deg ); transform: translate(-50%, -50%) rotate( -90deg ); background-color: #fff; transition: transform .35s ease-in-out, opacity .35s ease-in-out, -webkit-transform .35s ease-in-out; }
+  span.menu-trigger:before { width: 12px; height: 2px; opacity: 1; }
+  span.menu-trigger:after { width: 2px; height: 12px; }
+  span.menu-trigger:after, span.menu-trigger:before { background-color: white; }
+  .submenu, .sub-menu-level-1 { position: relative; left: 0; top: 0; transform: none; min-width: auto; box-shadow: none;
+       height: 100%; display: none; width:100% !important; visibility:visible; opacity:1; }
+  li.has-child:after { display: none; }
+  
+  .item_box { max-width: 30%; width: 100%;  margin: 5px ; }
+  
+
+  }
+  
+  @media (max-width:767px) {
+       .banner-content { width: 58.8%; }
+       .heading h1 {font-size: 40px; }
+       .customer-box {border: 1px solid rgb(196, 191, 191); padding: 10px 0 20px 0; margin: 10px;}
+       .happy_cust h1 {padding: 10px 0; margin-bottom: 10px;}
+       .happy_cust {padding: 0px 0; margin: 0; text-align: center;}
+  }
+  
+  @media (max-width:575px) {
+
+  .heading input {font-size: 20px;  padding:20px ;width: 100%; max-width: 100%;}
+  .item_box { max-width: 45%; width: 100%;  margin: 5px ; }
+  }
+  
+  @media (max-width:479px) {
+    .heading h1 {font-size: 30px; }
+       .heading {padding: 20px 0 100px  0; text-align: center;}
+       .item_box { max-width: 100%; width: 100%;  margin: 5px ; } 
+  }
+  @media (max-width:374px) {
+       .banner-slider .banner-title { font-size: 25px; }
+  }
+  
+  

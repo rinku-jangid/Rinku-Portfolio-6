@@ -1,0 +1,74 @@
+body * { box-sizing:border-box; padding: 0; margin: 0; }
+/* CSS Document */
+
+
+.container { margin:0 auto; max-width:1170px; padding: 0 15px;  }
+
+header {background-image: url(../images/bg.jpg);width: 100%; } 
+
+.layer {background-color: rgba(0, 0, 0, 0.5);}
+.header-wrapper {  padding:0px 0;display:table; width: 100%; }
+.header-actions-wrapper, .navigation-open { display: none; }
+.logo { display: table-cell; vertical-align: middle; width: 130px; }
+.logo img { width: 100%; }
+.header-wrapper > .header-right { width: calc(100% - 130px); display: table-cell; font-size: 0; 
+	vertical-align: middle; text-align: right; }
+.navigation { display: inline-block; vertical-align: middle;  }
+.navigation > ul { margin: 0; }
+.navigation > ul > li { display: inline-block; padding: 0 15px; position: relative; }
+.navigation > ul > li > a { font-size: 15px; font-weight: 500; color: rgb(254, 254, 254);border-bottom: 2px solid transparent;
+	 position: relative; transition: all 0.5s ease; text-transform: uppercase; padding-bottom: 5px;padding: 0 5px;
+	 text-decoration: none;  }
+.navigation > ul > li:hover a {border-bottom: 2px solid rgb(242, 213, 68);}
+.no-touch .navigation > ul > li > a:hover { color: var(--main-bg-hover); }
+.no-touch ul.submenu > li:hover { color:rgb(242, 213, 68) ;}
+ul.submenu:before { position: absolute; bottom: 100%; left: 0; width: 100%; display: block; content: ""; height: 10px; }
+.submenu { text-align: left; position: absolute; top: 100%; left: 0; box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px; 
+	padding: 10px 15px; background: rgb(187, 185, 185); z-index: 2; min-width: 150px; margin-top: 10px; opacity: 0; visibility: hidden;
+	 transition: 0.5s all; width: 100%; border-top: 3px solid rgb(242, 213, 68);text-align: center; }
+.submenu li {background-color: transparent;border-left:2px solid transparent;border-right:2px solid transparent;}
+.submenu li a {text-decoration: none;color: black;padding: 0 5px; border: 0 !important;}	 
+.submenu li a:hover {  transition: 0.3s all;}
+ul.submenu  li { margin-bottom: 7px; padding: 3px 0; }
+ul.submenu  li:hover {background-color: rgb(233, 229, 210); }
+.submenu-link { font-size: 16px; font-weight: 400; color: #000; ;
+	 transition: all 0.6s ease-in-out; padding: 5px 0;  }
+
+.sign-btn {padding: 5px 20px; margin: 0;font-size:15px;color:#fff;background-color:green;border: 1px solid transparent;
+border-radius: 5px;}
+.sign-btn:hover {background-color: transparent; color: green;border: 1px solid green;transition: all 0.4s ease;}
+
+/*header end*/
+.heading {padding: 20px 0 100px  0; text-align: center;}
+.heading h1 {padding: 5px 0; color: #fff; font-size: 60px; font-weight: 400;}
+.heading input {font-size: 20px;  padding:20px ;width: 100%; max-width: 80%;}
+
+.fea_item {padding: 30px 0; margin: 20px 0; }
+.fea_item img {width: 100%;}
+.fea_item h1 {font-weight: 400; text-align: center; padding: 20px 0; margin: 0;}
+.item_box {border: 1px solid rgb(210, 204, 204);cursor: pointer; max-width: 23%; width: 100%; display:inline-block;
+ margin: 5px 0;}
+.item_box:hover {box-shadow: 1px 0px 0px 1px;}
+.fea_item h2  {font-size: 18px; font-weight: 400; text-align: center;padding: 5px 10px;margin: 0;}
+.fea_item p { padding: 5px 10px ; margin:0;}
+.fea-main {clear: both;}
+.fea_left {float: left; max-width: 70%;width: 100%; display: flex;}
+.fea_right {float: right; max-width: 30%; width: 100%;}
+.fea_left img {border-radius: 50px; padding: 15px ;margin: 0; width: 70px;}
+.fea_left span {padding: 20px 10px;margin: 0; font-size: 12px; }
+.fea_right h3 {font-size: 16px; background-color: rgb(240, 240, 93);font-weight: 400; display: inline-block ;margin: 17px 0;
+padding: 2px;}
+.fea_wrapper {width: 100%; text-align: center;}
+
+.happy_cust {padding: 20px 0; margin: 0; text-align: center;}
+.happy_cust h1 {text-align: center; font-weight: 400; padding: 10px 0; margin-bottom: 50px;}
+.customer-box {border: 1px solid rgb(196, 191, 191); padding: 50px 0 20px 0; margin: 10px;}
+.happy_cust p {color: gray; padding: 10px;}
+.customer-box img { max-width:100px; width: 100%; border-radius: 50px; margin: 0 auto;}
+
+.customer-slider .owl-dots {padding: 5px; text-align: center;}
+.customer-slider .owl-dot span {display: block; background-color: #fff; border: 1px solid green; margin: 5px ;
+width: 10px; height: 10px; border-radius: 5px;}
+.customer-slider .owl-dot.active span {background-color: green;}
+
+
